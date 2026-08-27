@@ -40,4 +40,12 @@ public class No<T>{
     public No<T> getNextNo(){
         return this.nextNo;
     }
+
+    // O método toString foi sobrescrito para fornecer uma representação em
+    // string do objeto No. Ele retorna uma string que exibe o valor
+    // armazenado em dado.
+    @Override
+    public String toString(){
+        return "Dado{ " + getDado() + "}";
+    }
 }
